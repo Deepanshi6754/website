@@ -1,0 +1,471 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f3f3f3;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    background: #ff6347;
+    padding: 15px 0;
+}
+
+.logo {
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.hero,
+.about,
+.recipes,
+.contact {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero {
+    background: url('https://th.bing.com/th/id/OIP.M5iu6dMVs5OrICg0eZIvYAHaHa?w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.4rm=2&w=1960&h=1960&dpr=1.4&pid=ImgDetMain') no-repeat center/cover;
+    color: #fff;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hidden-info {
+    display: none;
+    color: #444;
+    margin-top: 10px;
+}
+
+.recipe-card,
+.info-toggle {
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.recipe-card:hover,
+.info-toggle:hover {
+    color: #ff6347;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    font-size: 1em;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    border-color: #ff6347;
+    box-shadow: 0 0 8px rgba(255, 99, 71, 0.5);
+    outline: none;
+}
+
+.contact textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.contact button {
+    padding: 15px 30px;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact button:hover {
+    background-color: #e5533d;
+    transform: scale(1.05);
+}
+
+.contact button:active {
+    transform: scale(1);
+}
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f3f3f3;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    background: #ff6347;
+    padding: 15px 0;
+}
+
+.logo {
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+/* Recipes Section */
+.recipes {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #fff3e6;
+}
+
+.recipes h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.recipes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.recipe-card {
+    width: 300px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.recipe-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.recipe-card h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin: 15px;
+}
+
+.recipe-card p {
+    font-size: 1em;
+    color: #555;
+    margin: 0 15px 20px;
+}
+
+.recipe-card .btn {
+    display: block;
+    text-align: center;
+    margin: 0 auto 20px;
+    padding: 10px 20px;
+    background: #ff6347;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.recipe-card .btn:hover {
+    background-color: #e5533d;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .recipes-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f3f3f3;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    background: #ff6347;
+    padding: 15px 0;
+}
+
+.logo {
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://th.bing.com/th/id/OIP.yQfbQRanDbJRHDPD8ccodQHaE8?w=1357&h=905&rs=1&pid=ImgDetMain') no-repeat center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+    height: 300px;
+    width: 100%;
+}
+
+/* Search Section */
+.search {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.search h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.search input {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.search button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search button:hover {
+    background-color: #e5533d;
+}
+
+/* Recipes Section */
+.recipes {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #fff3e6;
+}
+
+.recipes h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.recipes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.recipe-card {
+    width: 300px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.recipe-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.recipe-card h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin: 15px;
+}
+
+.recipe-card p {
+    font-size: 1em;
+    color: #555;
+    margin: 0 15px 20px;
+}
+
+.recipe-card .btn {
+    display: block;
+    text-align: center;
+    margin: 0 auto 20px;
+    padding: 10px 20px;
+    background: #ff6347;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.recipe-card .btn:hover {
+    background-color: #e5533d;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .recipes-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search input {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+
+
+.about {
+    text-align: center;
+    padding: 60px 20px;
+    background: url('https://th.bing.com/th/id/OIP.M5iu6dMVs5OrICg0eZIvYAHaHa?w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.4rm=2&w=1960&h=1960&dpr=1.4&pid=ImgDetMain') no-repeat center/cover;
+    /* Add a background image */
+    color: #fff;
+    /* Change text color to white for better contrast */
+}
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about-content {
+    max-width: 800px;
+    /* Limit the width for better readability */
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.5);
+    /* Add a semi-transparent background for readability */
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.about-content p {
+    font-size: 1.1em;
+    margin: 15px 0;
+    line-height: 1.6;
+}
